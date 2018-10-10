@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
+        <module name="collection" />
+        <module name="design" />
+        <module name="ibatis" />
+        <module name="junit" />
+        <module name="jvm" />
+        <module name="springannotation" />
+        <module name="thread" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithm" target="1.6" />
+      <module name="collection" target="1.6" />
+      <module name="design" target="1.6" />
+      <module name="ibatis" target="1.6" />
+      <module name="junit" target="1.6" />
+      <module name="jvm" target="1.6" />
+      <module name="springannotation" target="1.8" />
+      <module name="thread" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
