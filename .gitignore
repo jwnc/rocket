@@ -6,7 +6,7 @@ ehthumbs.db
 /software/
 /transaction-logs/
 .svn/
-.idea/
+.idea
 *.iml
 
 # Folder config file
