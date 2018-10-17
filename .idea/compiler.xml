@@ -18,11 +18,11 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algorithm" target="1.8" />
-      <module name="collection" target="1.8" />
-      <module name="design" target="1.8" />
-      <module name="ibatis" target="1.8" />
-      <module name="junit" target="1.8" />
-      <module name="jvm" target="1.8" />
+      <module name="collection" target="1.6" />
+      <module name="design" target="1.6" />
+      <module name="ibatis" target="1.6" />
+      <module name="junit" target="1.6" />
+      <module name="jvm" target="1.6" />
       <module name="springannotation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
