@@ -7,8 +7,79 @@
     <groupId>com.wnc</groupId>
     <artifactId>jvm</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wnc</groupId>
+            <artifactId>myjar</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-agent</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>C:\projects\ucar\rocket\jvm\src\main\resources\btrace-bin-1.3.11\build\btrace-agent.jar
+            </systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-boot</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>C:\projects\ucar\rocket\jvm\src\main\resources\btrace-bin-1.3.11\build\btrace-boot.jar
+            </systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-client</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>C:\projects\ucar\rocket\jvm\src\main\resources\btrace-bin-1.3.11\build\btrace-client.jar
+            </systemPath>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -19,16 +90,5 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>com.wnc</groupId>
-            <artifactId>myjar</artifactId>
-            <version>2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
+
 </project>
