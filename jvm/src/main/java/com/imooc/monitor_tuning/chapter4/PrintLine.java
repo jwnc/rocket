@@ -14,7 +14,7 @@ public class PrintLine {
     @OnMethod(
             clazz = "com.imooc.monitor_tuning.chapter4.Ch4Controller",
             method = "exception",
-            location = @Location(value = Kind.LINE, line = -1)
+            location = @Location(value = Kind.LINE, line = 41)
     )
     public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, int line) {
         BTraceUtils.println(pcn + "," + pmn + "," + line);
